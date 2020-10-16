@@ -11,6 +11,7 @@
 	display: flex;
 	flex-direction: column;
 	margin: 2rem;
+	align-items: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -23,15 +24,13 @@
 	border: solid red;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	/* justify-content: space-between; */
 }
 
 .heading-content {
 	border: solid green;
 	display: flex;
 	flex-direction: column;
-	margin: 1rem auto 0;
-	/* padding: 2rem; */
 }
 
 .heading {
@@ -53,7 +52,7 @@
 	}
 
 	.heading-content {
-		max-width: 50%;
+		max-width: 25rem;
 		margin-left: 1rem;
 	}
 
@@ -93,10 +92,15 @@
 }
 
 @media screen and (min-width: 768px) {
+	.ratings-list {
+		margin-left: 6rem;
+	}
+
 	.rating-card {
 		flex-direction: row;
 		align-items: center;
 		margin-left: 0;
+		padding: 0 5rem 0 3rem;
 	}
 
 	.rating-content {
@@ -136,6 +140,14 @@
 		flex-direction: row;
 	}
 
+	.review {
+		max-width: 19rem;
+	}
+
+	.review ~ .review {
+		margin-left: 3rem;
+	}
+
 	.review-card-one {
 		align-self: flex-start;
 		margin-left: 1rem;
@@ -148,10 +160,6 @@
 	.review-card-three {
 		align-self: flex-end;
 		margin-bottom: 0;
-	}
-
-	.review ~ .review {
-		margin-left: 3rem;
 	}
 }
 
