@@ -21,14 +21,11 @@
 }
 
 .heading-section {
-	border: solid red;
 	display: flex;
 	flex-direction: column;
-	/* justify-content: space-between; */
 }
 
 .heading-content {
-	border: solid green;
 	display: flex;
 	flex-direction: column;
 }
@@ -66,7 +63,6 @@
 }
 
 .ratings-list {
-	border: solid blue;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -118,18 +114,17 @@
 	
 	.rating-card-three {
 		align-self: flex-end;
+		margin-top: 0;
 		margin-right: 0;
 	}
 }
 
 .review-section {
-	border: solid gray;
 	display: flex;
 	flex-direction: column;
 }
 
 .review {
-	border: solid pink;
 	background-color: rgb(81,31,80);
 	border-radius: 0.75rem;
 	margin-bottom: 1rem;
