@@ -1,12 +1,190 @@
 .attribution {
-    font-size: 11px;
-    text-align: center;
+	font-size: 11px;
+	text-align: center;
 }
 
 .attribution a {
-    color: hsl(228, 45%, 44%);
+	color: hsl(228, 45%, 44%);
 }
 
-.header {
-    color: blue;
+.container {
+	display: flex;
+	flex-direction: column;
+	margin: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+	.container {
+		margin: 4rem;
+	}
+}
+
+.heading-section {
+	border: solid red;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.heading-content {
+	border: solid green;
+	display: flex;
+	flex-direction: column;
+	margin: 1rem auto 0;
+	/* padding: 2rem; */
+}
+
+.heading {
+	color: rgb(81,31,80);
+	font-size: 3rem;
+	text-align: center;
+	margin-top: 0;
+}
+
+.subheading {
+	color: rgb(218,216,221);
+	font-weight: bold;
+	text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+	.heading-section {
+		flex-direction: row;
+	}
+
+	.heading-content {
+		max-width: 50%;
+		margin-left: 1rem;
+	}
+
+	.heading {
+		text-align: left;
+	}
+	
+	.subheading {
+		text-align: left;
+	}
+}
+
+.ratings-list {
+	border: solid blue;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.rating-card {
+	display: flex;
+	flex-direction: column;
+	background-color: rgb(247, 242, 248);
+	color: rgb(81,31,80);
+	border-radius: 0.75rem;
+	margin: 1rem;
+	padding: 1rem;
+}
+
+.rating-stars {
+	margin: auto;
+}
+
+.rating-content {
+	text-align: center;
+	font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+	.rating-card {
+		flex-direction: row;
+		align-items: center;
+		margin-left: 0;
+	}
+
+	.rating-content {
+		margin-left: 2rem;
+	}
+
+	.rating-card-one {
+		align-self: flex-start;
+		margin-bottom: 1rem;
+	}
+	
+	.rating-card-two {
+		margin: 0 1.5rem 1rem;
+	}
+	
+	.rating-card-three {
+		align-self: flex-end;
+		margin-right: 0;
+	}
+}
+
+.review-section {
+	border: solid gray;
+	display: flex;
+	flex-direction: column;
+}
+
+.review {
+	border: solid pink;
+	background-color: rgb(81,31,80);
+	border-radius: 0.75rem;
+	margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+	.review-section {
+		flex-direction: row;
+	}
+
+	.review-card-one {
+		align-self: flex-start;
+		margin-left: 1rem;
+	}
+
+	.review-card-two {
+		margin: 2rem 0;
+	}
+
+	.review-card-three {
+		align-self: flex-end;
+		margin-bottom: 0;
+	}
+
+	.review ~ .review {
+		margin-left: 3rem;
+	}
+}
+
+.buyer-info {
+	display: flex;
+	margin: 2rem;
+}
+
+.buyer-details {
+	display: flex;
+	flex-direction: column;
+	margin-left: 1rem;
+}
+
+.buyer-image {
+	height: 40px;
+	border-radius: 50%;
+}
+
+.buyer-name {
+	color: rgb(247, 242, 248);
+	font-weight: bold;
+	margin: 0 0 0.25rem;
+}
+
+.buyer-verified {
+	color: rgb(159, 99, 144);
+	margin: 0;
+}
+
+.buyer-quote {
+	color: rgb(247, 242, 248);
+	margin: 1rem;
+	line-height: 1.25;
+	margin-bottom: 2rem;
 }
